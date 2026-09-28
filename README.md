@@ -80,3 +80,69 @@ Missing dates are not automatically treated as zero because a missing observatio
 ```text
 Total System Load =
 Children in CBP Custody + Children in HHS Care
+2. Net Intake Pressure
+
+```text
+Net Intake Pressure =
+Children Transferred Out of CBP Custody
+- Children Discharged from HHS Care
+
+A positive value indicates that transfers exceeded discharges for that observation.
+
+3. Care Load Growth Rate
+Care Load Growth Rate =
+Percentage change in Total System Load
+
+This helps identify increases or decreases in system load.
+
+4. Rolling Average
+
+7-day and 14-day rolling averages are used to identify broader trends while reducing short-term fluctuations.
+
+5. High-Load Indicator
+
+A descriptive percentile-based threshold is used to identify observations with relatively high total system load.
+
+6. Sustained Positive Pressure
+
+Periods with positive net intake pressure for multiple consecutive observations are identified for further analysis.
+
+📈 Exploratory Data Analysis
+
+The project performs:
+
+Descriptive statistics
+Daily trend analysis
+Weekly analysis
+Monthly analysis
+CBP vs HHS comparison
+Transfer vs discharge analysis
+Net intake analysis
+Rolling-average analysis
+High-load analysis
+Data-quality analysis
+Trend and pressure analysis
+📊 Dashboard
+
+An interactive Streamlit dashboard is developed to make the analysis easier to explore.
+
+Dashboard Features
+📌 KPI summary cards
+📅 Date-range filtering
+📈 Total system load trends
+🏢 CBP vs HHS load comparison
+🔄 Transfers vs discharges
+📊 Net intake pressure
+📉 Rolling averages
+⚠️ High-load period identification
+🔎 Sustained pressure analysis
+📋 Data-quality summary
+📥 Processed-data download
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Plotly
+Streamlit
+Jupyter Notebook
+Git & GitHub
